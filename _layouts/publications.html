@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<!-- reference: research.html -->
+{% assign prof = site.data.professor[page.professor] %}
+
+{% include nav-home.html %}
+
+<!-- [mod] start page title section -->
+<section class="cover-background background-position-top top-space"
+    style="background-image:url('/images/header/publications.jpg');">
+    <div class="opacity-medium bg-extra-dark-gray"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 display-table page-title-large">
+                <div class="display-table-cell vertical-align-middle text-center padding-30px-tb">
+                    <!-- start sub title -->
+                    <!--<span class="display-block text-white opacity6 alt-font margin-5px-bottom">WHAT WE DO</span>-->
+                    <!-- end sub title -->
+                    <!-- start page title -->
+                    <h1 class="alt-font text-white font-weight-600 no-margin-bottom">{{page.title}}</h1>
+                    <!-- end page title -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end page title section -->
+
+{% for year in page.years %}
+<!-- [mod] start information section -->
+<section class="animated animated">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 center-col last-paragraph-no-margin">
+                <h5 class="text-extra-dark-gray alt-font margin-30px-left">
+                    {{year}}
+                </h5>
+                <!--
+                            Cannot user frontmatter array as a single parameter for the bibliography command.
+                            Pass them manually. 
+                            Refer bib.html in the _layouts folder for reference styles. For {% reference %}, refer to the csl file in the assets folder.
+                             -->
+                <p>
+                    {% bibliography --file sample --file social_computing --file user_interaction --query @*[year={{year}}]* %}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endfor %}
+<!-- [mod] end information section -->
+
+{% include footer.html %}

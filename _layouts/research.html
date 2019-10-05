@@ -1,0 +1,59 @@
+---
+layout: default
+---
+        {% assign prof = site.data.professor[page.professor] %}
+
+        {% include nav-home.html %}
+
+        <!-- [mod] start page title section -->
+        <section class="wow fadeIn cover-background background-position-top top-space" style="background-image:url('/images/header/research.jpg');">
+            <div class="opacity-medium bg-extra-dark-gray"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 display-table page-title-large">
+                        <div class="display-table-cell vertical-align-middle text-center padding-30px-tb">
+                            <!-- start sub title -->
+                            <span class="display-block text-white opacity6 alt-font margin-5px-bottom">WHAT WE DO</span>
+                            <!-- end sub title -->
+                            <!-- start page title -->
+                            <h1 class="alt-font text-white font-weight-600 no-margin-bottom">Research</h1>
+                            <!-- end page title -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end page title section -->
+
+        {% for item in site.research %}
+        <!-- [mod] start information section -->
+        <section class="wow fadeIn animated animated">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 center-col last-paragraph-no-margin">
+                        <h4 class="text-extra-dark-gray alt-font font-weight-600">
+                          <a href="{{item.url}}">{{item.title}}</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="row equalize sm-equalize-auto">
+                    <div class="col-md-12 col-sm-12 col-xs-12 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="display-table width-100 height-100">
+                            <div class="display-table-cell vertical-align-middle padding-twelve-lr sm-text-center sm-no-padding width-100">
+                                <ul>
+                                  {% for topic in item.topics %}
+                                  <li style="font-size: 2rem; margin-bottom: 20px; line-height: 150%; font-weight: 300;">
+                                      {{ topic.title }}
+                                  </li>
+                                  {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% endfor %}
+        <!-- [mod] end information section -->
+
+        {% include footer.html %}
