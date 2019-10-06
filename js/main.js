@@ -2138,7 +2138,7 @@ $(document).ready(function () {
             dottedOverlay: "none",
             delay: 9000,
             navigation: {
-                keyboardNavigation: "off",
+                keyboardNavigation: "on",
                 keyboard_direction: "vertical",
                 mouseScrollNavigation: "off",
                 mouseScrollReverse: "default",
@@ -2151,7 +2151,7 @@ $(document).ready(function () {
                     drag_block_vertical: false
                 },
                 arrows: {
-                    style: "uranus",
+                    style: "hermes",
                     enable: true,
                     hide_onmobile: false,
                     hide_over: 479,

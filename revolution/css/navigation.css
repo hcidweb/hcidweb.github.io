@@ -258,7 +258,7 @@ website:    http://www.themepunch.com
 	height:40px;
 	position:absolute;
 	display:block;
-	z-index:10000;
+	z-index:100;
 }
 .custom.tparrows:hover {
 	background:#000;
@@ -514,7 +514,7 @@ website:    http://www.themepunch.com
   min-height:70px;
   position:absolute;
   display:block;
-  z-index:1000;
+  z-index:100;
   border-radius:35px;   
 }
 
@@ -758,7 +758,7 @@ opacity:1
     font-size:13px;
     font-weight:700;
     text-transform:uppercase;
-    font-family:"Roboto Slab";
+    font-family:"Roboto Slab"
     margin-bottom:5px;
 }
 
@@ -999,7 +999,7 @@ website:    http://www.themepunch.com
 	height:100px;
 	position:absolute;
 	display:block;
-	z-index:1000;
+	z-index:100;
 }
 
 .hades.tparrows:before {
@@ -1254,7 +1254,7 @@ website:    http://www.themepunch.com
     min-height:70px;
   position:absolute;
   display:block;
-  z-index:1000;
+  z-index:100;
 }
 .hebe.tparrows:hover {
 }
@@ -1419,7 +1419,7 @@ border-radius:6px;
     font-size:13px;
     font-weight:700;
     text-transform:uppercase;
-    font-family:"Roboto Slab";
+    font-family:"Roboto Slab"
     margin-bottom:5px;
 }
 
@@ -1451,7 +1451,7 @@ website:    http://www.themepunch.com
 	height:40px;
 	position:absolute;
 	display:block;
-	z-index:1000;
+	z-index:100;
     border-radius:50%;
 }
 .hephaistos.tparrows:hover {
@@ -1532,7 +1532,7 @@ website:    http://www.themepunch.com
 	height:110px;
 	position:absolute;
 	display:block;
-	z-index:1000;
+	z-index:100;
 }
 
 .hermes.tparrows:before {
@@ -1552,7 +1552,7 @@ website:    http://www.themepunch.com
 }
 .hermes.tparrows.tp-rightarrow:before {
 	content: "\e825";
-}
+}/*
 .hermes.tparrows.tp-leftarrow:hover:before {
     transform:translateX(-20px);
     -webkit-transform:translateX(-20px);
@@ -1562,7 +1562,7 @@ website:    http://www.themepunch.com
     transform:translateX(20px);
     -webkit-transform:translateX(20px);
      opacity:0;
-}
+}*/
 
 .hermes .tp-arr-allwrapper {
     overflow:hidden;
@@ -1755,7 +1755,7 @@ website:    http://www.themepunch.com
 	height:40px;
 	position:absolute;
 	display:block;
-	z-index:1000;
+	z-index:100;
     border-radius: 50%;
 }
 .hesperiden.tparrows:hover {
@@ -1834,7 +1834,7 @@ website:    http://www.themepunch.com
     margin-top:-10px;
     color:#fff;
     display:block;
-    z-index:10000;
+    z-index:1000;
     background-color:#000;
     padding:5px 10px; 
     bottom:0px;
