@@ -1552,17 +1552,7 @@ website:    http://www.themepunch.com
 }
 .hermes.tparrows.tp-rightarrow:before {
 	content: "\e825";
-}/*
-.hermes.tparrows.tp-leftarrow:hover:before {
-    transform:translateX(-20px);
-    -webkit-transform:translateX(-20px);
-     opacity:0;
 }
-.hermes.tparrows.tp-rightarrow:hover:before {
-    transform:translateX(20px);
-    -webkit-transform:translateX(20px);
-     opacity:0;
-}*/
 
 .hermes .tp-arr-allwrapper {
     overflow:hidden;
