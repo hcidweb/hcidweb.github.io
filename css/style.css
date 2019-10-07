@@ -3857,3 +3857,8 @@ aside .latest-post li figure {width: 75px;}
     text-decoration: none;
     font-weight: bold;
 }
+.underline_text {
+    border-bottom: solid 7px #fff;
+    display: inline;
+    padding-bottom: 0px;
+}
