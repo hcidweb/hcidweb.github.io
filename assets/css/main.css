@@ -13,13 +13,10 @@
 
 .bibliography {
   margin-bottom: 50px;
-  margin-top: 20px;
-  list-style-type: circle; }
+  margin-top: 20px; }
   .bibliography li {
     margin: 10px 0;
     position: relative; }
-    .bibliography li span {
-      display: block; }
     .bibliography li .title {
       font-weight: bolder; }
     .bibliography li .author a {
