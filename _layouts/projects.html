@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+
+<!-- [mod] start page title section -->
+<section class="wow fadeIn cover-background background-position-top top-space"
+    style="background-image:url('/assets/images/header/research.jpg');">
+    <div class="opacity-medium bg-extra-dark-gray"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 display-table page-title-large">
+                <div class="display-table-cell vertical-align-middle text-center padding-30px-tb">
+                    <!-- start sub title -->
+                    <span class="display-block text-white opacity6 alt-font margin-5px-bottom">WHAT WE DO</span>
+                    <!-- end sub title -->
+                    <!-- start page title -->
+                    <h1 class="alt-font text-white font-weight-600 no-margin-bottom">ONGOING PROJECTS</h1>
+                    <!-- end page title -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end page title section -->
+
+{% for item in site.projects %}
+<section class="wow fadeIn no-margin-bottom">
+    <div class="container">
+        <div class="row equalize md-equalize-auto">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center display-table xs-margin-0px-bottom wow fadeIn">
+                <div class="display-table-cell vertical-align-middle">
+                    {% assign image_url = item.image | prepend: "/assets/images/projects/" %}
+                    <img src="{{image_url | relative_url }}" alt="" class="width-90">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 no-padding display-table md-margin-five-top sm-text-center xs-no-margin-top wow fadeIn"
+                data-wow-delay="0.4s">
+                <div
+                    class="display-table-cell vertical-align-middle padding-twelve-lr md-padding-15px-lr xs-text-center xs-padding-five-lr xs-padding-ten-top width-100">
+                    <h6 class="font-weight-600 alt-font text-extra-dark-gray letter-spacing-minus-1">{{item.title}}</h6>
+                    <div class="left_line">
+                        <p>{{item.description}}</p>
+                    </div>
+                    {% assign detail_url = item.slug | prepend: "/projects/" %}
+                    <a href="{{ detail_url | relative_url }}" class="btn btn-small btn-dark-gray">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endfor %}
+<!-- [mod] end information section -->
+

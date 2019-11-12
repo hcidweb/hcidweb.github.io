@@ -1,0 +1,59 @@
+
+<header>
+    <div class="left-nav">
+        {% include logo.html %}
+        <div class="sidebar-part2">
+            <div class="sidebar-top margin-100px-top">
+                <div class="sidebar-middle-menu alt-font font-weight-600">
+                    <nav class="navbar bootsnav alt-font">
+                        <div id="navbar-menu" class="collapse navbar-collapse no-padding">
+                            <ul class="nav navbar-nav">
+
+                                {% for page in site.nav_list %}
+                                <li class="dropdown">
+                                    <a data-toggle="dropdown" href="{{page[1][1] | relative_url }}" title="{{page[1][0]}}">{{page[1][0]}}
+                                      {% if page[1][2] %}
+                                      <i class="fas fa-angle-right"></i>
+                                      {% endif %}
+                                    </a>
+                                    {% if page[1][2] %}
+                                    <ul class="dropdown-menu second-level">
+                                        {% for subpage in page[1][2] %}
+                                        <li class="dropdown">
+                                            <a href="{{subpage[1] | relative_url }}" title="{{subpage[0]}}" data-toggle="dropdown">{{subpage[0]}}</a>
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                    {% endif %}
+                                </li>
+                                {% endfor %}
+
+                                <li>
+                                    <div class="side-left-menu-close close-side"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="icon-social-medium sm-margin-50px-top margin-15px-top text-left">
+			    <a class="text-black text-uppercase text-small" href="https://www.snu.ac.kr/"><img class="margin-5px-right" src="{{ '/assets/images/SNU_logo.png' | relative_url }}" alt="SNU" width="23" height="23">
+                            Seoul National University</a></br>
+		    <a class="text-black text-uppercase text-small" href="https://social.snu.ac.kr/"><img class="margin-5px-right" src="{{ '/assets/images/CSS_logo.png' | relative_url }}" alt="CSS SNU" width="23" height="23">
+                            College of Social Sciences</a>
+                        </div>
+			<div class="right-bg"><img src="{{ '/assets/images/digital-text.png' | relative_url }}" alt="Human-Computer Interaction & Design Lab."></div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-part3">
+            <div class="bottom-menu-icon">
+                <a href="javascript:void(0);" class="right-menu-button text-extra-dark-gray nav-icon" id="showRightPush">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header -->

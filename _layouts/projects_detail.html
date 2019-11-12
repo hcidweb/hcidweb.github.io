@@ -1,0 +1,57 @@
+---
+layout: default
+---
+{% assign prof = site.data.professor[page.professor] %}
+
+
+
+<!-- [mod] start page title section -->
+<section class="wow fadeIn cover-background background-position-top top-space"
+    style="background-image:url('/images/header/research.jpg');">
+    <div class="opacity-medium bg-extra-dark-gray"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 display-table page-title-large">
+                <div class="display-table-cell vertical-align-middle text-center padding-30px-tb">
+                    <!-- start sub title -->
+                    <!-- <span class="display-block text-white opacity6 alt-font margin-5px-bottom">WHAT WE DO</span> -->
+                    <!-- end sub title -->
+                    <!-- start page title -->
+                    <h1 class="alt-font text-white font-weight-600 no-margin-bottom">{{page.title}}</h1>
+                    <!-- end page title -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end page title section -->
+
+
+<!-- [mod] start information section -->
+<section class="wow fadeIn animated animated">
+    <div class="container">
+        <div class="row equalize sm-equalize-auto">
+            <div class="col-md-5 col-sm-12 col-xs-12 text-center sm-margin-30px-bottom wow fadeInLeft">
+                <div class="display-table width-100 height-100">
+                    <div class="display-table-cell vertical-align-middle width-100 height-100">
+
+                        {% assign image_url = page.image | prepend: "/assets/images/projects/" %}
+                        <img src="{{ image_url | relative_url }}" alt="" class="border-radius-6 width-100">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7 col-sm-12 col-xs-12 wow fadeInRight" data-wow-delay="0.2s">
+                <div class="display-table width-100 height-100">
+                    <div
+                        class="display-table-cell vertical-align-middle padding-twelve-lr sm-text-center sm-no-padding width-100">
+                        <p class="text-medium line-height-30 text-medium-gray">
+                            {{page.description}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

@@ -1,0 +1,82 @@
+---
+layout: default
+---
+
+<!-- [mod] start information section -->
+<section class="wow fadeIn animated animated">
+  <div class="container">
+    <div class="row equalize sm-equalize-auto">
+      <div class="col-md-5 col-sm-12 col-xs-12 text-center sm-margin-30px-bottom wow fadeInLeft">
+        <div class="display-table width-100 height-100">
+          <div class="display-table-cell vertical-align-middle width-100 height-100">
+            {% if page.image %}
+
+            {% assign image_url = page.image | prepend: "/assets/images/people/" %}
+            <img src="{{image_url|relative_url}}" alt="" class="border-radius-0 width-70">
+            {% else %}
+            <img src="{{'/assets/images/people/default.png'|relative_url}}" alt="" class="border-radius-0 width-70">
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7 col-sm-12 col-xs-12 wow fadeInRight" data-wow-delay="0.2s">
+        <div class="display-table width-100 height-100">
+          <div
+            class="display-table-cell vertical-align-middle padding-twelve-lr sm-text-center sm-no-padding width-100">
+            <span class="text-hcid alt-font margin-10px-bottom display-inline-block text-medium">
+              {% if page.group == 'phd' %}
+              PhD Student
+              {% elsif page.group == 'master' %}
+              Master Student
+              {% elsif page.group == 'professor' %}
+              Professor
+              {% elsif page.group == 'undergraduate' %}
+              Undergraduate Student
+              {% endif %}
+            </span>
+            <h6 class="alt-font text-extra-dark-gray">{{page.name}}</h6>
+
+            <div class="tags">
+              <p>
+                {% for item in page.interests %}
+                <a title="" href="">{{item}}</a>
+                {% endfor %}
+              </p>
+            </div>
+
+            <div class="left_line_person">
+            {% if page.description %}
+              <p>{{page.description}}</p>
+            {% elsif page.group == 'professor' %}
+            <p>{{page.name}} is a professor in HCI+d lab.</p>
+            {% else %}
+            <p>{{page.name}} is a {{page.group}} student in HCI+d lab.</p>
+            {% endif %}
+          </div>
+
+            {% if page.website %}
+            <a href="{{page.website}}" class="btn btn-hcid btn-small text-extra-small btn-rounded margin-5px-top"><i
+                class="fas fa-globe-asia icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i>
+              WEB</a>
+            {% endif %}
+            {% if page.email %}
+            <a href="mailto:{{page.email}}"
+              class="btn btn-hcid btn-small text-extra-small btn-rounded margin-5px-top"><i
+                class="fas fa-envelope icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i>
+              E-MAIL</a>
+            {% endif %}
+            {% if page.cv %}
+            {% assign cv_url = page.cv | prepend: "/assets/cv/" %}
+            <a href="{{cv_url|relative_url}}"
+              class="btn btn-hcid btn-small text-extra-small btn-rounded margin-5px-top"><i
+                class="fas fa-file icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i> CV</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- [mod] end information section -->
+
+
