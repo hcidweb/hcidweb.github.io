@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<!-- reference: research.html -->
+{% assign prof = site.data.professor[page.professor] %}
+{% assign publications = site.data.publication %}
+
+<!-- [mod] start page title section -->
+<section class="sm-margin-50px-top cover-background background-position-top top-space"
+    style="background-image:url('/assets/images/header/publications.jpg');">
+    <div class="opacity-medium bg-extra-dark-gray"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 display-table page-title-large">
+                <div class="display-table-cell vertical-align-middle text-center padding-30px-tb">
+                    <!-- start sub title -->
+                    <!--<span class="display-block text-white opacity6 alt-font margin-5px-bottom">WHAT WE DO</span>-->
+                    <!-- end sub title -->
+                    <!-- start page title -->
+                    <h1 class="alt-font text-white font-weight-600 no-margin-bottom">{{page.title}}</h1>
+                    <!-- end page title -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end page title section -->
+
+<!-- [mod] start information section -->
+<section class="animated animated">
+    <div class="container">
+        <div class="row">
+            {% for year in publications.papers %}
+            <div class="col-md-12 col-sm-12 center-col margin-five-bottom last-paragraph-no-margin">
+                <h5 class="text-extra-dark-gray alt-font margin-30px-left">
+                    {{year.year}}
+                </h5>
+                <div class="display-table">
+                    <div class="display-table-cell vertical-align-middle sm-text-center padding-20px-lr width-100">
+                        {% for paper in year.list %}
+                        <div class="left_line margin-15px-bottom">
+                            <p><strong>{{paper.title}}</strong></br>{{paper.author}}</br>{{paper.venue}}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- [mod] end information section -->

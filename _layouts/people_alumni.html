@@ -1,0 +1,92 @@
+---
+layout: default
+---
+        {% assign prof = site.data.professor[page.professor] %}
+
+        <!-- [mod] start page title section -->
+        <section class="wow fadeIn cover-background background-position-top top-space" style="background-image:url('http://placehold.it/1920x450');">
+            <div class="opacity-medium bg-extra-dark-gray"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 display-table page-title-large">
+                        <div class="display-table-cell vertical-align-middle text-center padding-30px-tb">
+                            <!-- start sub title -->
+                            <span class="display-block text-white opacity6 alt-font margin-5px-bottom">HCI+d</span>
+                            <!-- end sub title -->
+                            <!-- start page title -->
+                            <h1 class="alt-font text-white font-weight-600 no-margin-bottom">Alumni</h1>
+                            <!-- end page title -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end page title section -->
+
+        <!-- [mod] start alumni section -->
+        <section class="wow fadeIn">
+            <div class="container">
+                <span class="text-deep-pink alt-font margin-10px-bottom display-inline-block text-medium">PhD Alumni<br/><br/></span>
+                <div class="row">
+                    {% for member in site.data.alumni %}
+                    {% if member.group == "phd" %}
+                    <!-- start contact block -->
+                    <div class="col-md-3 col-sm-4 col-xs-12 text-center last-paragraph-no-margin sm-margin-30px-bottom wow fadeInUp">
+                        <div class="padding-30px-all border-all border-width-1 border-color-medium-gray sm-padding-10px-all xs-padding-20px-all">
+                            <div class="text-extra-dark-gray alt-font font-weight-600 text-uppercase">{{ member.name }}</div>
+                            <p>{{ member.current }}</p>
+                            <p>
+                              {% if member.interests %}
+                              {{ member.interests}}<br>
+                              {% endif %}
+                              {% if member.thesis %}
+                              <strong>Thesis:</strong> {{member.thesis}}<br>
+                              {% endif %}
+                              {% if member.email %}
+                              <strong>E:</strong> <a href="mailto:{{member.email}}">{{member.email}}</a>
+                              {% endif %}
+                            </p>
+                        </div>
+                    </div>
+                    <!-- end contact block -->
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        <!-- [mod] end alumni section -->
+
+        <!-- [mod] start alumni section -->
+        <section class="wow fadeIn overlap-section">
+            <div class="container">
+                <span class="text-deep-pink alt-font margin-10px-bottom display-inline-block text-medium">Master Alumni<br/><br/></span>
+                <div class="row">
+                  {% for member in site.data.alumni %}
+                  {% if member.group == "master" %}
+                  <!-- start contact block -->
+                  <div class="col-md-3 col-sm-4 col-xs-12 text-center last-paragraph-no-margin sm-margin-30px-bottom wow fadeInUp">
+                      <div class="padding-30px-all border-all border-width-1 border-color-medium-gray sm-padding-10px-all xs-padding-20px-all">
+                          <div class="text-extra-dark-gray alt-font font-weight-600 text-uppercase">{{ member.name }}</div>
+                          <p>{{ member.current }}</p>
+                          <p>
+                            {% if member.interests %}
+                            {{ member.interests}}<br>
+                            {% endif %}
+                            {% if member.thesis %}
+                            <strong>Thesis:</strong> {{member.thesis}}<br>
+                            {% endif %}
+                            {% if member.email %}
+                            <strong>E:</strong> <a href="mailto:{{member.email}}">{{member.email}}</a>
+                            {% endif %}
+                          </p>
+                      </div>
+                  </div>
+                  <!-- end contact block -->
+                  {% endif %}
+                  {% endfor %}
+                </div>
+            </div>
+        </section>
+        <!-- [mod] end alumni section -->
+
+

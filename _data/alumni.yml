@@ -1,0 +1,64 @@
+- name: Donghwan Kim
+  group: phd_alumn
+  current: Assistant Professor at Yonsei University Graduate School of Communications & Arts
+  interestss: Robot Journalism, HCI, Natural Language Generation, Social Computing
+  email: dongwhan80@snu.ac.kr
+
+- name: Hyeok Kim
+  group: master_alumn
+  current: PhD stduent in computer science at Northwestern University
+  interestss: HCI, Visualization, Design Research
+  thesis: Discovering a Design Space for the Transition of News Articles with Data Visualization from Large to Small Screen Devices
+  email: hyeok@northwestern.edu
+
+- name: Joonmin Lee
+  group: master_alumn
+  current: UX Researcher at PPLINK Inc.
+  thesis: The Influence of Visual Elements and Interaction on Understanding Information Visualization
+
+- name: JoonYoung Lee
+  group: master_alumn
+  current: Samsung SDS
+  interests: Social Computing, Image Analysis, Cognitive Science
+- name: Nahi Hong
+  group: master_alumn
+  interests: Crowdsourcing, Human Computation, Computational Journalism, Fact-checking
+- name: Heeryung Choi
+  group: master_alumn
+  current: University of Michigan (PhD)
+  site: heeryung.github.io
+  interests: Learning Science, Social Computing, Cognitive Science
+- name: Dongmin Lee
+  group: master_alumn
+- name: JeSeok Lee
+  group: etc_alumn
+  current: University of California, Irvine(PhD)
+- name: Hajin Lim
+  group: master_alumn
+  current: Cornell University (PhD)
+- name: Sungjin Nam
+  group: etc_alumn
+  current: University of Michigan(PhD)
+- name: Jae-eun Lim
+  group: master_alumn
+  current: Hyundai Motor Group
+  interests: Crowdsourcing, Work-related communication, Consumer analysis
+- name: Seyong Ha
+  group: master_alumn
+  current: University of Toronto
+- name: Inho Won
+  group: master_alumn
+- name: Younghoon Kim
+  group: url_alumn
+  current: University of Washington(PhD)
+- name: Yeana Jang
+  group: master_alumn
+  interests: Information Architecture and Design, Experience Design, Social Computing
+- name: Sooyeun Jang
+  group: master_alumn
+  current: Kakao Corp.
+  interests: Social Computing, Typography
+- name: Wonryong Ryou
+  group: url_alumn
+  current: undergraduate in Seoul National University CSE
+  interests: Social Computing, Computational Social Science, NLP

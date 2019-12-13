@@ -1,0 +1,61 @@
+<!-- start masonry portfolio section -->
+<section class="bg-light-gray wow fadeIn">
+    <div class="container-fluid margin-20px-left margin-20px-right">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h5
+                    class="text-uppercase alt-font text-extra-dark-gray margin-20px-bottom font-weight-700 sm-width-100 xs-width-100">
+                    Ongoing Projects</h5>
+                <span
+                    class="separator-line-horrizontal-medium-light2 bg-hcid display-table margin-auto width-100px"></span>
+            </div>
+        </div>
+        <div class="row no-margin">
+            <div class="filter-content overflow-hidden margin-100px-top sm-margin-75px-top xs-margin-50px-top">
+                <ul class="portfolio-grid work-4col hover-option2 gutter-small">
+                    <li class="grid-sizer"></li>
+                    <!-- start portfolio item -->
+                    {% for item in site.projects %}
+                    <li class="grid-item wow fadeInUp" data-wow-delay="0.6s">
+
+                        {% assign slug_url = item.slug | prepend: '/projects/'%}
+                        <a href="{{ slug_url | relative_url }}">
+                            <figure>
+
+                                {% assign image_url = item.image | prepend: '/assets/images/projects/'%}
+                                <div class="portfolio-img bg-hcid"><img src="{{ image_url | relative_url }}" alt="" />
+                                </div>
+                                <figcaption>
+                                    <div class="portfolio-hover-main text-left">
+                                        <div class="portfolio-hover-box vertical-align-center">
+                                            <div
+                                                class="portfolio-hover-content position-relative last-paragraph-no-margin">
+                                                <div
+                                                    class="bg-black margin-six-bottom separator-line-horrizontal-medium-light2">
+                                                </div>
+                                                <span
+                                                    class="font-weight-600 line-height-normal alt-font text-white text-uppercase margin-one-half-bottom display-block">{{item.title}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    {% endfor %}
+                    <!-- end portfolio item -->
+                </ul>
+
+            </div>
+
+            <div class="row text-right margin-50px-top wow-fadeIn">
+                <div class="col-md-12">
+                    <a href="{{ '/projects' | relative_url }}" class="btn btn-very-small btn-dark-gray">Read more</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- end masonry portfolio section -->

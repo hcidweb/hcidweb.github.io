@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+
+<!-- Chaining Filters is allowed in Liquid syntax -->
+{% assign news = site.news | sort: 'date' | reverse %}
+
+<!-- [mod] start page title section -->
+<section class="sm-margin-50px-top wow fadeIn cover-background background-position-top top-space"
+    style="background-image:url('{{ '/assets/images/header/news.jpg' | relative_url }}');">
+    <div class="opacity-medium bg-extra-dark-gray"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 display-table page-title-large">
+                <div class="display-table-cell vertical-align-middle text-center padding-30px-tb">
+                    <!-- start sub title -->
+                    <!-- <span class="display-block text-white opacity6 alt-font margin-5px-bottom">WHAT WE DO</span> -->
+                    <!-- end sub title -->
+                    <!-- start page title -->
+                    <h1 class="alt-font text-white font-weight-600 no-margin-bottom">HCI+D NEWS</h1>
+                    <!-- end page title -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+</section>
+<div
+    class="filter-content overflow-hidden margin-30px-left margin-30px-right margin-50px-top sm-margin-75px-top xs-margin-50px-top">
+    <ul class="portfolio-grid work-2col hover-option2 gutter-small">
+        <li class="grid-sizer"></li>
+        <!-- start portfolio item -->
+        {% for new in news %}
+        <li class="grid-item wow fadeInUp">
+            <div class="left_line">
+                <div
+                    class="alt-font text-uppercase margin-30px-top margin-5px-bottom text-large text-extra-dark-gray font-weight-600 xs-margin-15px-top">
+                    
+                {% assign new_date = new.date | date: '%Y/%m/%d' %}
+                {% assign new_url =  new_date | prepend: '/news/'%}
+                    <a href="{{ new_url | relative_url }}">{{new.title}}</a></div>
+
+                <div
+                    class="alt-font margin-5px-top margin-5px-bottom text-small text-dark-gray font-weight-400 xs-margin-15px-top">
+                    {{ new.date | date: '%B %d, %Y' }}</div>
+
+                <p>{{new.detail}}</p>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+<!-- end page title section -->
+

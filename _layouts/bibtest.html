@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<h1> How to use Jekyll-Scholar </h1>
+<h3> Query by Category </h3>
+<!-- research_area is defined in _pages/bibtest.md -->
+{% for area in page.research_area %}
+  <h4> {{ area }}</h4> 
+  <!-- 
+    Query format: @{type of publication}[{filter}]
+    Below example: @*[category={{area}}] => Filter any type of publications where the category matches with {{area}}.
+  -->
+  {% bibliography --file all --query @*[category={{area}}] %}
+{% endfor %}
+
+<h3>How to display formatted references </h3>
+{% reference kim2016histogram --file all%}
+<h3> For more details visit: <a href="https://github.com/inukshuk/jekyll-scholar" target="_blank">GitHub</a> </h3>

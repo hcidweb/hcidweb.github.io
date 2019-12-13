@@ -1,0 +1,70 @@
+papers:
+    - year: 2020
+      list:
+        - title: "Bot in the Bunch: Facilitating Discussion in Group Chat by Improving Efficiency and Participation with a Chatbot"
+          author: "Soomin Kim, Jinsu Eun, Changhoon Oh, Joonhwan Lee, Bongwon Suh"
+          venue: "CHI 2020"
+        - title: "TalkingBoogie: Collaborative Mobile AAC System for Non-verbal Children with Developmental Disabilities and Their Caregivers"
+          author: "Donghoon Shin, Jaeyoon Song, Seokwoo Song, Jisoo Park, Joonhwan Lee, Soojin Jun"
+          venue: "CHI 2020"
+        - title: "Understanding User Perception of Automated News Generation System"
+          author: "Changhoon Oh, Jinhan Choi, Sungwoo Lee, SoHyun Park, Daeryong Kim, Jungwoo Song, Dongwhan Kim, Joonhwan Lee, Bongwon Suh"
+          venue: "CHI 2020"
+    - year: 2019
+      list:
+        - title: "The Implementation of MiRO, a Media-as-Place Computer Game"
+          author: "Hyeok Kim, Haesoo Kim, Youngjin Kwon, Hansol Jang, SooMin Lee, Joonhwan Lee"
+          venue: "DIS 2019"
+        - title: "Expressing Personalities of Conversational Agents through Visual and Verbal Feedback"
+          author: "Seo-young Lee, Gyuhoe Lee, Soomin Kim, Joonhwan Lee"
+          venue: "Electronics 2019"
+        - title: "Game or Live Streaming?: Players of a Quiz Flock Together: Motivation and Social Experience in Live Mobile Quiz Shows"
+          author: "Soomin Kim, Joonhwan Lee, Gahgene Gweon"
+          venue: "CHI 2019"
+        - title: "Designing an Algorithm-Driven Text Generation System for Personalized and Interactive News Reading"
+          author: "Dongwhan Kim, Joonhwan Lee"
+          venue: "International Journal of Human-Computer Interaction"
+    - year: 2018
+      list:
+        - title: "Why do smartphone users hesitate to delete unused apps?"
+          author: "Hyanghee Park, Jinsu Eun, Joonhwan Lee"
+          venue: "MobileHCI 2018"
+        - title: "Robots in Diverse Contexts: Effects of Robots Tasks on Expected Personality"
+          author: "Seo-young Lee, Soomin Kim, Gyuho Lee, and Joonhwan Lee"
+          venue: "HRI 2018"
+        - title: '"Eat What You Want and Be Healthy!": Comfort Food Effects: Human-Food Interaction in View of Celebratory Technology'
+          author: "Youjin Hwang, Siyoung Lee, Hyeong Seok Jeon, Jung Han Yoon Park, Ki Won Lee, Joonhwan Lee"
+          venue: "ICMI 2018"
+        - title: "The Influence of 'Social Viewing' on Televised Debate Viewers' Political Judgment"
+          author: "Kyu S. Hahn, Hye-Yon Lee, Seyong Ha, Seulgi Jang, Joonwhan Lee"
+          venue: "Political Communication"
+    - year: 2017
+      list:
+        - title: "The influence of depression and personality on social networking"
+          author: "Jieun Wee, Sooyeun Jang, Joonhwan Lee, Woncheol Jang"
+          venue: "Computers in Human Behavior"
+        - title: "With whom do you feel most intimate?: Exploring the quality of Facebook friendships in relation to similarities and interaction behaviors"
+          author: "Jieun Wee, Joonhwan Lee"
+          venue: "PLoS ONE"
+        - title: "Is Regional Animus in Decline in Korea? A Test of the Generational Difference and Geographical Mobility Hypothesis"
+          author: "Kyu S. Hahn, Jihye Lee, Seulgi Jang, Inho Won, Joonhwan Lee"
+          venue: "Pacific Affairs"
+        - title: "Immersive VR for numerical engagement"
+          author: "Soomin Kim, Wookjae Maeng, Cindy Oh, Joonmin Lee, Seo-young Lee, Jeewon Choi, Gilwhan Hwang, Guhyun Hwang, Hyunsung Kim, Joonseok Kim, Joonhwan Lee"
+          venue: "VRST 2017"
+        - title: "Do private and sexual pictures receive more likes on Instagram?"
+          author: "Hyanghee Park, and Joonhwan Lee"
+          venue: "International Conference on Research and Innovation in Information Systems"
+    - year: 2016
+      list:
+        - title: "Smiley face: why we use emoticon stickers in mobile messaging"
+          author: "Joonyoung Lee, Nahi Hong, Soomin Kim, Jonghwan Oh, Joonhwan Lee"
+          venue: "MobileHCI 2016"
+        - title: "Automated News Generation for TV Program Ratings"
+          author: "Soomin Kim, Jonghwan Oh, Joonhwan Lee"
+          venue: "TVX 2016"
+    - year: 2015
+      list:
+        - title: "Use of the backseat driving technique in evaluation of a perceptually optimized in-car navigation display"
+          author: "Joonhwan Lee, Jodi Forlizzi, Scott E. Hudson, Soojin Jun"
+          venue: "International Journal of Human-Computer Interaction"

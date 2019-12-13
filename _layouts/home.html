@@ -1,0 +1,110 @@
+---
+layout: default
+---
+
+{% include slider-home.html %}
+
+<!-- start section -->
+<section class="wow fadeIn">
+    <div class="container">
+        <div class="row equalize md-equalize-auto">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center display-table xs-margin-15px-bottom wow fadeIn">
+                <div class="display-table-cell vertical-align-middle">
+                    <img src="{{ '/assets/images/lab_main.png' | relative_url }}" alt="" class="width-100">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 no-padding display-table md-margin-five-top sm-text-center xs-no-margin-top wow fadeIn"
+                data-wow-delay="0.4s">
+                <div class="display-table-cell vertical-align-middle padding-twelve-lr md-padding-15px-lr xs-text-center xs-padding-five-lr xs-padding-ten-top width-100">
+                    <h4 class="font-weight-400 text-extra-dark-gray letter-spacing-minus-1">Human-Computer
+                        Interaction+Design Lab.</h4>
+                    <div class="left_line">
+                        <p>In hci+d lab. at Seoul National University, we are conducting research on Human-Computer
+                            Interaction, Human-Robot Interaction, Social Computing, Robot Journalism, Information
+                            Visualization and more. Current research focuses on understanding social behavior through
+                            large data analysis and building high fidelity interactive systems.</p>
+                    </div>
+                    <a href='{{"/research" | relative_url}}' class="btn btn-small btn-dark-gray"> research</a>
+                    <a href='{{"/people" | relative_url}}' class="btn btn-small btn-dark-gray"> people</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end section -->
+
+<!-- start features box section -->
+<section class="bg-light-gray wow fadeIn">
+    <div class="container position-relative">
+        <div class="row sm-col-2-nth">
+            <!-- start feature box item -->
+            <div
+                class="col-md-3 col-sm-6 col-xs-12 text-center feature-box-11 sm-margin-eight-bottom xs-margin-30px-bottom wow fadeInRight last-paragraph-no-margin">
+                <div
+                    class="display-inline-block padding-30px-all width-130px height-130px line-height-65 border-radius-100 bg-white text-center progress-line">
+                    <img src="{{ '/assets/images/human_computer_interaction.png' | relative_url }}" alt="">
+                </div>
+                <div
+                    class="alt-font margin-30px-top margin-15px-bottom text-dark-gray font-weight-600 xs-margin-15px-top">
+                    Human-Computer Interaction</div>
+                <p class="width-75 md-width-100 sm-width-90 center-col">Our main research area is Human-Computer
+                    Interaction which explores interaction between human and computers. The study intersects disciplines
+                    such as computer science, behavioral science, design, communication, media studies and several other
+                    fields of study.</p>
+            </div>
+            <!-- end feature box item -->
+            <!-- start feature box item -->
+            <div class="col-md-3 col-sm-6 col-xs-12 text-center feature-box-11 sm-margin-eight-bottom xs-margin-30px-bottom wow fadeInRight last-paragraph-no-margin"
+                data-wow-delay="0.4s">
+                <div
+                    class="display-inline-block padding-30px-all width-130px height-130px line-height-65 border-radius-100 bg-white text-center progress-line">
+                    <img src="{{ '/assets/images/social_computing.png' | relative_url }}" alt="">
+                </div>
+                <div
+                    class="alt-font margin-30px-top margin-15px-bottom text-dark-gray font-weight-600 xs-margin-15px-top">
+                    Social Computing</div>
+                <p class="width-75 md-width-100 sm-width-90 center-col">As computer plays an important role in our daily
+                    life, it is becoming also important to understand social interaction within a computerized society.
+                    Social Computing is an area of intersection of computer science and social science to understand and
+                    support any sort of social behavior in or through computational systems.</p>
+            </div>
+            <!-- end feature box item -->
+            <!-- start feature box item -->
+            <div class="col-md-3 col-sm-6 col-xs-12 text-center feature-box-11 sm-margin-eight-bottom xs-margin-30px-bottom wow fadeInRight last-paragraph-no-margin"
+                data-wow-delay="0.8s">
+                <div
+                    class="display-inline-block padding-30px-all width-130px height-130px line-height-65 border-radius-100 bg-white text-center progress-line">
+                    <img src="{{ '/assets/images/robot_journalism.png' | relative_url }}" alt="">
+                </div>
+                <div
+                    class="alt-font margin-30px-top margin-15px-bottom text-dark-gray font-weight-600 xs-margin-15px-top">
+                    Robot Journalism</div>
+                <p class="width-75 md-width-100 sm-width-90 center-col">We focus on automating article-writing process.
+                </p>
+            </div>
+            <!-- end feature box item -->
+            <!-- start feature box item -->
+            <div class="col-md-3 col-sm-6 col-xs-12 text-center feature-box-11 sm-margin-eight-bottom xs-margin-30px-bottom wow fadeInRight last-paragraph-no-margin"
+                data-wow-delay="1.2s">
+                <div
+                    class="display-inline-block padding-30px-all width-130px height-130px line-height-65 border-radius-100 bg-white text-center">
+                    <img src="{{ '/assets/images/infovis.png' | relative_url }}" alt="">
+                </div>
+                <div
+                    class="alt-font margin-30px-top margin-15px-bottom text-dark-gray font-weight-600 xs-margin-15px-top">
+                    Information Visualization</div>
+                <p class="width-75 md-width-100 sm-width-90 center-col">We are intensively working on Information
+                    Visualization research which generates interactive visual representations of abstract data to
+                    support human cognition. This has emerged from research in human-computer interaction, computer
+                    science, visual design and psychology and is becoming important in data science including big data
+                    analysis.</p>
+            </div>
+            <!-- end feature box item -->
+        </div>
+    </div>
+</section>
+
+{% include news.html %}
+<!-- end feature box section -->
+
+{% include portfolio-home.html %}
