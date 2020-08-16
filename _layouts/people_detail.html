@@ -66,10 +66,16 @@ layout: default
               E-MAIL</a>
             {% endif %}
             {% if page.cv %}
+            {% if page.cv contains "http" %}
+            <a href="{{ page.cv }}"
+              class="btn btn-hcid btn-small text-extra-small btn-rounded margin-5px-top"><i
+                class="fas fa-file icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i> CV</a>
+            {% else%}
             {% assign cv_url = page.cv | prepend: "/assets/cv/" %}
             <a href="{{cv_url|relative_url}}"
               class="btn btn-hcid btn-small text-extra-small btn-rounded margin-5px-top"><i
                 class="fas fa-file icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i> CV</a>
+            {% endif %}
             {% endif %}
           </div>
         </div>
