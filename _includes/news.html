@@ -1,0 +1,53 @@
+<!-- end masonry portfolio section -->
+
+<!-- start masonry portfolio section -->
+
+{% assign news = (site.news | sort: 'date') | reverse %}
+
+<section class="wow fadeIn">
+    <div class="container-fluid margin-20px-left margin-20px-right">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h5
+                    class="text-uppercase alt-font text-extra-dark-gray margin-20px-bottom font-weight-700 sm-width-100 xs-width-100">
+                    News</h5>
+                <span
+                    class="separator-line-horrizontal-medium-light2 bg-hcid display-table margin-auto width-100px"></span>
+            </div>
+        </div>
+
+        <div class="row no-margin">
+            <div class="filter-content overflow-hidden margin-50px-top sm-margin-75px-top xs-margin-50px-top">
+                <ul class="portfolio-grid work-2col hover-option2 gutter-small">
+                    <li class="grid-sizer"></li>
+                    <!-- start portfolio item -->
+                    {% for new in news limit:10 %}
+                    <li class="grid-item wow fadeInUp">
+                        <div class="left_line">
+
+                            {% assign new_date =  {{new.date | date: '%Y/%m/%d'}} %}
+                            {% assign new_url =  new_date | prepend: '/news/'%}
+                            <div
+                                class="alt-font text-uppercase margin-30px-top margin-5px-bottom text-medium text-extra-dark-gray font-weight-700 xs-margin-15px-top">
+                                <a href="{{ new_url | relative_url }}">{{new.title}}</a></div>
+
+                            <div
+                                class="alt-font margin-5px-top margin-5px-bottom text-small text-dark-gray font-weight-400 xs-margin-15px-top">
+                                {{ new.date | date: '%B %d, %Y' }}</div>
+
+                            <p>{{new.detail}}</p>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <div class="row text-right margin-50px-top wow-fadeIn">
+            <div class="col-md-12">
+                <a href="{{ '/news' | relative_url }}" class="btn btn-very-small btn-dark-gray">Read more</a>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>

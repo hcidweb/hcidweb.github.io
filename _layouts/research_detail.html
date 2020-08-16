@@ -1,0 +1,64 @@
+---
+layout: default
+---
+{% assign prof = site.data.professor[page.professor] %}
+{% assign image_url = page.image | prepend: "/assets/images/research/" %}
+
+<!-- [mod] start page title section -->
+<section class="sm-margin-50px-top wow fadeIn cover-background background-position-top top-space"
+    style="background-image:url({{image_url}});">
+    <div class="opacity-medium bg-extra-dark-gray"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 display-table page-title-large">
+                <div class="display-table-cell vertical-align-middle text-center padding-30px-tb">
+                    <!-- start sub title -->
+                    <!-- <span class="display-block text-white opacity6 alt-font margin-5px-bottom">WHAT WE DO</span> -->
+                    <!-- end sub title -->
+                    <!-- start page title -->
+                    <h1 class="alt-font text-white font-weight-600 no-margin-bottom">{{page.title}}</h1>
+                    <!-- end page title -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end page title section -->
+
+
+<!-- [mod] start information section -->
+<section class="wow fadeIn animated padding-three-top">
+    {% for topic in page.topic-list %}
+    <div class="container margin-five-tb">
+        <div class="row equalize sm-equalize-auto">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center sm-margin-20px-bottom wow fadeIn">
+                <h6 class="font-weight-600 alt-font text-extra-dark-gray letter-spacing-minus-1">{{topic.title}}</h6>
+                <div class="display-table">
+                    <div class="display-table-cell vertical-align-middle padding-three-lr sm-text-center width-100">
+                        <p class="text-medium line-height-30 text-medium-gray text-left padding-three-top">
+                            {{topic.detail}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center no-margin-bottom padding-15px-top wow fadeIn">
+            <h6
+                class="font-weight-550 alt-font text-medium text-extra-dark-gray letter-spacing-minus-1 padding-20px-lr text-left">
+                Publication</h6>
+            <div class="display-table">
+                <div class="display-table-cell vertical-align-middle sm-text-center padding-20px-lr width-100">
+                    {% for paper in topic.publication %}
+                    <div class="left_line">
+                        <p>{{paper.title}}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% if forloop.last != true %}
+    <hr>
+    {% endif %}
+    {% endfor %}
+</section>

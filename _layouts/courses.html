@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+
+<!-- [mod] start page title section -->
+<section class="sm-margin-50px-top wow fadeIn cover-background background-position-top top-space"
+    style="background-image:url('/assets/images/header/research.jpg');">
+    <div class="opacity-medium bg-extra-dark-gray"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 display-table page-title-large">
+                <div class="display-table-cell vertical-align-middle text-center padding-30px-tb">
+                    <!-- start page title -->
+                    <h1 class="alt-font text-white font-weight-600 no-margin-bottom">COURSES</h1>
+                    <!-- end page title -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end page title section -->
+
+{% for item in site.courses reversed %}
+<section class="wow fadeIn no-margin-bottom padding-five-tb">
+    <div class="container">
+        <div class="row equalize md-equalize-auto">
+            <div
+                    class="display-table-cell vertical-align-middle padding-twelve-lr md-padding-15px-lr xs-text-center xs-padding-five-lr xs-padding-ten-top width-100">
+                    <h6 class="font-weight-600 alt-font text-extra-dark-gray letter-spacing-minus-1">{{item.title}}</h6>
+                    <div class="left_line">
+                        <p>{{item.description}}</p>
+                    </div>
+                    {% assign detail_url = item.slug | prepend: "/courses/" %}
+                    <a href="{{ detail_url | relative_url }}" class="btn btn-small btn-dark-gray">Course detail</a>
+                </div>
+        </div>
+    </div>
+</section>
+{% if forloop.last != true %}
+<hr>
+{% endif %}
+{% endfor %}
+<!-- [mod] end information section -->
+
